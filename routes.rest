@@ -1,0 +1,59 @@
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "email":"diana@hotmail.com",
+    "password":"123"
+}
+###
+
+GET http://localhost:5000/posts
+
+###
+GET http://localhost:5000/posts/own
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYyODY4MmMyYjZhY2NiYjUwYzFmMWViNiIsInVzZXJuYW1lIjoiZGlhbmEiLCJlbWFpbCI6ImRpYW5hQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkbWdnd0psQWc2cFRxblpQZVIxNEoyZTJzRjFvczd6eDNHL1poNEdTTDVER3B3MGVwWHU1S3EiLCJwb3N0cyI6W10sIl9fdiI6MH0sImlhdCI6MTY1Mjk4Nzg5NiwiZXhwIjoxNjUyOTg3OTU1fQ.BfbUqz8m-fBgQh0vXrWWqkJfeJA2AJMwuTgxb63Cz3c
+
+###
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYyODY4MmMyYjZhY2NiYjUwYzFmMWViNiIsInVzZXJuYW1lIjoiZGlhbmEiLCJlbWFpbCI6ImRpYW5hQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkbWdnd0psQWc2cFRxblpQZVIxNEoyZTJzRjFvczd6eDNHL1poNEdTTDVER3B3MGVwWHU1S3EiLCJwb3N0cyI6W10sIl9fdiI6MH0sImlhdCI6MTY1Mjk4NzcwNX0.manYn3QmHn-I3ekbu2iblXi84igXIEabgHZFJcq79qg"
+}
+
+###
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYyODY4MmMyYjZhY2NiYjUwYzFmMWViNiIsInVzZXJuYW1lIjoiZGlhbmEiLCJlbWFpbCI6ImRpYW5hQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkbWdnd0psQWc2cFRxblpQZVIxNEoyZTJzRjFvczd6eDNHL1poNEdTTDVER3B3MGVwWHU1S3EiLCJwb3N0cyI6W10sIl9fdiI6MH0sImlhdCI6MTY1Mjk4NzcwNX0.manYn3QmHn-I3ekbu2iblXi84igXIEabgHZFJcq79qg"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+###
+POST http://localhost:5000/posts
+Content-Type: application/json
+
+{
+    "author":"edek95",
+    "content":"u gala ggulu gala gulu galagulu gala gulu galagulugala gulu galagulu gala gulu galagulugala gulu"
+}
+###
+POST http://localhost:4000/register
+Content-Type: application/json
+
+{
+    "username":"diana",
+    "email":"diana@hotmail.com",
+    "password":"123"
+}
